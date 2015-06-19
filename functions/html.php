@@ -20,7 +20,14 @@ function html_header(){
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 
-
+<style>
+            .viewposts{
+                width: 400px;
+                height: 600px;
+                border: 1px solid blue;
+                margin-left: 50px;
+            }        
+</style>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 
@@ -59,25 +66,28 @@ function html_header(){
                         </ul>
                     </li>
                 </ul>
-
-
-
-
-                <form class="navbar-form navbar-right" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Търсене">
-                    </div>
-                    <button type="submit" class="btn btn-default">Търси</button>
-                </form>
-
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
+        <?php
+            function posts (){                
+            ?>
+        <div>
+  <ul class="pagination">
+  <li class="disabled"><a href="?controller=Home&action=index">«</a></li>
+  <li class="active"><a href="?controller=Home&action=index">1</a></li>
+  <li><a href="?controller=Home&action=index">2</a></li>
+  <li><a href="?controller=Home&action=index">3</a></li>
+  <li><a href="?controller=Home&action=index">4</a></li>
+  <li><a href="?controller=Home&action=index">5</a></li>
+  <li><a href="?controller=Home&action=index">»</a></li>
+</ul>
+        </div>
+        <?php
+            }
+        ?>
 <?php
 }
-
-
-
 function html_footer(){
     ?>
     </body>
