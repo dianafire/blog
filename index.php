@@ -14,16 +14,16 @@
     require_once (dirname(__FILE__).'/pages/Categories.php');
     require_once(dirname(__FILE__) . '/pages/User.php');
     require_once(dirname(__FILE__) . '/pages/viewposts.php');
-    //require_once(dirname(__FILE__) . '/pages/Basket.php');
+    require_once(dirname(__FILE__) . '/pages/AddRemove.php');
     //$db=DataBase::getDB();
     //$db1=DataBase::getDB();
     $controller=Validate::get('controller','string','Home');
     $action=Validate::get('action','string','index');
+    $params=Validate::get('params','string','view');
     if (class_exists($controller)){
         $page=new $controller;
-        call_user_func(array($page,$action),[]);
+        call_user_func(array($page,$action),$params);
     }
     else {
         echo "Sorry!";
     }
-    var_dump($controller);

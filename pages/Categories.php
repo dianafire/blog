@@ -1,7 +1,7 @@
 <?php
  class Categories{
         public function index(){
-            $select=DataBase::getDB()->select("SELECT * FROM blog.category;");
+            $select=DataBase::getDB()->select("SELECT * FROM blog.categories;");
             html_header();
             if ($select){
                 foreach($select as $category){

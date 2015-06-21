@@ -15,16 +15,22 @@ class Home{
                     $text=$post['text'];
                     $date=$post['date'];
                     $catTitle=$post['catTitle'];
-                    echo "<blockquote>";
+                    //$catID=$post['catID'];
+                    echo"<div'>";
+                    echo"<blockquote>";
                     echo"<h3>$title</h3>";
                     echo"<h4>$description</h4>";
-                    echo "<p>$text</p>";
-                    echo "<small>$catTitle,$date</small>";
-                    echo"<small><a class='btn btn-primary btn-xs' href='?controller=viewposts&action=view'>Виж целия текст:</a></small>";
+                    echo"<p>$text</p>";
+                    echo"<small>$catTitle,$date</small>";
+                    echo"<small><a href='?controller=viewposts&action=view&params=$title'>"
+                    . "<input type='hidden' name='prati' value='$title'>"
+                    . "<input type='submit' value='Виж целия текст'></a></small>";
                     echo "</blockquote>";
-                }
+                    echo"</div>";
             }
- posts();
+            }
+            posts();
             html_footer();
         }
     }
+    

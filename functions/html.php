@@ -21,11 +21,12 @@ function html_header(){
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 
 <style>
-            .viewposts{
+            .alone{
                 width: 400px;
-                height: 600px;
+                height: 500px;
                 border: 1px solid blue;
-                margin-left: 50px;
+                margin-left: 150px;
+                background-color: lightgray;
             }        
 </style>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -37,7 +38,6 @@ function html_header(){
     </head>
 
     <body>
-
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -58,15 +58,17 @@ function html_header(){
 
                     <li class="dropdown">
                         <a href="?controller=Categories&action=index" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Категории <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
+                        <ul class="dropdown-menu" role="menu" name="name">
                             <li><a href="?controller=Categories&action=index">History</a></li>
                             <li><a href="?controller=Categories&action=index">Math</a></li>
                             <li><a href="?controller=Categories&action=index">Geography</a></li>
-
-                        </ul>
+                    </ul>
                     </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
+            <div class="changeinfo">
+                <a href="?controller=AddRemove&action=addremove">Промени коментар</a>
+            </div>
         </div><!-- /.container-fluid -->
     </nav>
         <?php
@@ -85,11 +87,12 @@ function html_header(){
         </div>
         <?php
             }
-        ?>
+        ?>       
 <?php
 }
 function html_footer(){
     ?>
+         
     </body>
     </html>
     <?php
