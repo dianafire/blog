@@ -6,9 +6,12 @@
             <file>file:/D:/IT/XAMPP/htdocs/blogg/pages/viewposts.php</file>
             <file>file:/D:/IT/XAMPP/htdocs/blogg/index.php</file>
             <file>file:/D:/IT/XAMPP/htdocs/blogg/pages/Categories.php</file>
+            <file>file:/D:/IT/XAMPP/htdocs/blogg/pages/AddRemove.php</file>
             <file>file:/D:/IT/XAMPP/htdocs/blogg/pages/User.php</file>
             <file>file:/D:/IT/XAMPP/htdocs/blogg/functions/html.php</file>
             <file>file:/D:/IT/XAMPP/htdocs/blogg/pages/Home.php</file>
+            <file>file:/D:/IT/XAMPP/htdocs/blogg/lib/DataBase.php</file>
+            <file>file:/D:/IT/XAMPP/htdocs/blogg/lib/Validate.php</file>
         </group>
     </open-files>
 </project-private>

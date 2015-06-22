@@ -20,6 +20,7 @@
     $controller=Validate::get('controller','string','Home');
     $action=Validate::get('action','string','index');
     $params=Validate::get('params','string','view');
+    //$param=Validate::get('params','string','uploaddelete');
     if (class_exists($controller)){
         $page=new $controller;
         call_user_func(array($page,$action),$params);

@@ -67,7 +67,7 @@ function html_header(){
                 </ul>
             </div><!-- /.navbar-collapse -->
             <div class="changeinfo">
-                <a href="?controller=AddRemove&action=addremove">Промени коментар</a>
+                <a href="?controller=AddRemove&action=form">Промени коментар</a>
             </div>
         </div><!-- /.container-fluid -->
     </nav>
